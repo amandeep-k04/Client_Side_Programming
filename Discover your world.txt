@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Your World 🌍</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://edube.org/uploads/media/default/0001/04/web-favicon.png" type="image/png" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+      color: #333333;
+      margin: 2rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem auto;
+    }
+
+    button {
+      cursor: pointer;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 25px;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+      transition: background-color 0.25s ease-in-out, transform 0.2s ease;
+      margin-bottom: 2rem;
+    }
+
+    button:hover,
+    button:focus {
+      background-color: #1b4f72;
+      outline: none;
+      transform: scale(1.05);
+    }
+
+    img {
+      max-width: 90vw;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    area {
+      cursor: pointer;
+    }
+
+    #locationResult {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #555555;
+      min-height: 1.5em;
+      margin-top: -1rem;
+      margin-bottom: 2rem;
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Discover Your World &#x1F30D;</h1>
+  <p>Explore the continents and learn about their geography, rivers, mountains, and famous landmarks.</p>
+
+  
+  <button id="discoverLocation" type="button" aria-label="Discover your current location">Discover Location</button>
+
+
+  <p id="locationResult" aria-live="polite" aria-atomic="true"></p>
+  <img
+    src="https://edube.org/uploads/media/default/0001/04/continents.jpg"
+    usemap="#image-map"
+    alt="World Map"
+    role="img"
+  />
+
+  <map name="image-map">
+    <area
+      alt="North America"
+      title="North America"
+      id="north-america"
+      coords="386,283,41,17"
+      shape="rect"
+      href="javascript:void(0);"
+    />
+    <area
+      alt="South America"
+      title="South America"
+      id="south-america"
+      coords="209,501,358,288"
+      shape="rect"
+      href="javascript:void(0);"
+    />
+    <area
+      alt="Europe"
+      title="Europe"
+      id="europe"
+      coords="391,68,505,217"
+      shape="rect"
+      href="javascript:void(0);"
+    />
+    <area
+      alt="Africa"
+      title="Africa"
+      id="africa"
+      coords="533,217,387,448"
+      shape="rect"
+      href="javascript:void(0);"
+    />
+    <area
+      alt="Asia"
+      title="Asia"
+      id="asia"
+      coords="893,153,506,1"
+      shape="rect"
+      href="javascript:void(0);"
+    />
+    <area
+      alt="Australia and Oceania"
+      title="Australia and Oceania"
+      id="australia-and-oceania"
+      coords="679,353,872,480"
+      shape="rect"
+      href="javascript:void(0);"
+    />
+  </map>
+  
+</body>
+</html>

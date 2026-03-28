@@ -1,0 +1,29 @@
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Text */
+p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
